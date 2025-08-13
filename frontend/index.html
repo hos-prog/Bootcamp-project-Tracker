@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bootcamp Project Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bootcamp Project Tracker</h1>
+
+    <form id="projectForm">
+      <input type="text" id="name" placeholder="Project Name" required>
+      <input type="text" id="description" placeholder="Description" required>
+      <select id="status" required>
+        <option value="ongoing">Ongoing</option>
+        <option value="completed">Completed</option>
+      </select>
+      <button type="submit">Add Project</button>
+    </form>
+
+    <ul id="projectList"></ul>
+  </div>
+
+  <!-- Script moved to bottom so HTML loads first -->
+  <script src="app.js"></script>
+</body>
+</html>
